@@ -10,16 +10,11 @@ $(document).ready(function () {
         }
 
 
-        // If all validations pass, submit the form
         alert("Form submitted successfully!");
-        // Uncomment the following line to submit the form
         $('#myForm').unbind('submit').submit();
     });
 });
 
-
-
-// Function to validate password using regex
 function goodpass(password) {
     var passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[0-9]).{6,}$/;
     return passwordRegex.test(password);
