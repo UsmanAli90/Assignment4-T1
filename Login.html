@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Signup</title>
 </head>
 
 <body>
-    <form action="">
+    <form id="loginform">
         <div class="form-heading">
             <h1>Sign-In</h1>
         </div>
@@ -17,13 +18,15 @@
             <label for="name">Username</label>
             <input type="text" required>
             <label for="password">Password</label>
-            <input type="password" required>
+            <input type="password" id="mypassword" required>
 
             <button class="btn1" type="submit">Submit</button>
             <button class="btn2" type="reset">Reset</button>
 
         </div>
+        <p class="copy">Copyrights @Usman Ali</p>
     </form>
+    <script src="Login.js"></script>
 </body>
 
 </html>
